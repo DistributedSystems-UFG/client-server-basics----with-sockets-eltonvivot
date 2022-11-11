@@ -1,13 +1,21 @@
-# ClientServerBasics
-Starter code for the basic client-server assignment
+# Calculadora Simples
+Aplicação Cliente - Servidor simples com 3 operações básicas.
 
+**Servidor**:
+Recebe uma operação matemática como string e verifica se é do tipo _soma_, _multiplicação_ ou _divisão_. Caso seja, retorna o resultado.
 
-Este template corresponde ao exemplo da Fig. 2.3 do livro. O exercício consiste em acrescentar funcionalidade ao servidor para torná-lo mais útil. Essa funcionalidade deve ser acessível aos clientes. Por exemplo, o servidor pode ser uma espécie de calculadora remota. O cliente passa dois valores numéricos, juntamente nome de uma operação (ex.: add, subtract, multiply, divide) e o servidor executa a operação respectiva e retorna seu resultado para o cliente. Você pode implementar outro tipo de servidor (diferente da calculadora). O imporante é que ele ofereça pelo menos três operações diferentes que os clientes podem utilizar remotamente, passando dados para serem processados e recebendo o resultado desse processamento como resposta.
+Formato da string de entrada:
+```
+'<number1><operator><number2>'
+``` 
+Example:
+```
+'5.9*7.8'
+``` 
+A saída consiste no resultado da operação recebida.
 
-Tarefa individual.
+**Cliente**:
+Recebe uma operação matemática como entrada e a envia ao servidor. Caso a requisição ao servidor esteja correta será retornado e exibido o resultado da operação enviada.
 
-Incluir um Readme descritivo do sistema implementado.
-
-Incluir, no Readme, o link para o vídeo demonstrativo da execução do programa no AWS.
-
-Todo o código demais artefatos, incluindo o (link para o) vídeo demonstrativo, devem ser entregues via GitHub Classroom. 
+**Vídeo exemplo**:
+> TODO
