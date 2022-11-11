@@ -40,7 +40,7 @@ while True:                # forever
   if rcv_data == 'close': break
   result = calc(rcv_data)
   print(f" > {result}")
-  conn.send(str.encode(f"{result}")) # return sent data plus an "*"
+  conn.send(str.encode(f"{result}")) # return result
 conn.close()               # close the connection
 
 
